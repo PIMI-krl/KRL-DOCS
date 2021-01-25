@@ -5,9 +5,19 @@
       <h1 class="text-center">{{ .Title }}</h1>
       <div class="text-center">{{ .Content }}</div>
 			<div class="card-list">
-				{{ $currentSection := .CurrentSection }}
-				{{ range where .Site.RegularPages.ByTitle "Section" .Section }}
-					{{ if in (.Permalink | string) $currentSection.RelPermalink }}
+        {{ $currentSection := .CurrentSection }}
+        {{ $pages := where .Site.RegularPages.ByTitle "Section" .Section }}
+        {{ $sortedPages := sort $pages ".Parent.Name" "asc"}}
+        {{ range  $idx, $item := $sortedPages }}
+          {{ if in (.Permalink | string) $currentSection.RelPermalink }}
+            {{ if eq $idx 0 }}
+              {{ $item.Parent.Name }}
+            {{ else }}
+              {{ $prevItem := index $sortedPages (sub $idx 1) }}
+              {{ if not (eq $prevItem.Parent $item.Parent) }}
+                {{ $item.Parent.Name }}
+              {{ end }}
+            {{ end }}
 						<div class="card my-3">
 							<div class="card-body">
 								<a class="stretched-link" href="{{ .Permalink }}">{{ .Params.title | title }} &rarr;</a>
