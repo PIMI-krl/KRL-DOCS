@@ -16,7 +16,7 @@ toc: true
 Dokumentationen er bygget med en statisk-side generator ved navn Hugo. Erfaring med Hugo er ikke nødvendig til at redigere og skrive dokumentation, dog hvis man ønsker at indføre ændriger i sidens layout kræver det at man kender lidt til Hugo, se eventuelt Hugos egen [dokumentationsside](https://gohugo.io/documentation/).
 
 ## Installation
-For at installere miljøet skal man *clone* GitHub-arkivet og derefter installere alle afhængigheder via `npm`, når detter er gjort kan man starte webserveren og begynde med at skrive dokumentation.
+For at installere miljøet skal man *clone* GitHub-arkivet og derefter installere alle afhængigheder via `npm`, når dette er gjort kan man starte webserveren og begynde med at skrive dokumentation.
 
 ```
 $ git clone <GITHUB LINK INDSÆTTES HER> krl-dokumentation
@@ -40,7 +40,7 @@ Der findes også andre måder at installere Hugo på som kan ses [her](https://g
 
 ## Skrive-process
 
-Skrive processen starter ved at enten åbne en eksisterende fil eller ved oprettelse af en ny fil. I de følgende afsnit vil der blive beskrevet hvordan begge cases skal håndteres.
+Skriveprocessen afhænger af om man skal redigere i noget dokumentation som allerede eksistere, eller tilføje noget nyt - eksempelsvis når en ny komponent er blevet udviklet. Det følgende afsnit vil gå igennem begge cases.
 
 ### Eksisterende dokumentationssider
 For eksisterende sider er det nok at åbne den tilhørende fil, eksempelsvist `docs/opsætning/ekstern_dokumentation.md`, i en teksteditor efter eget valg hvorefter man er klar til at redigere i filen. Hvis man har startet webserveren som beskrevet i [det forrige afsnit](#installation) og åbnet hjemmesiden i en browser vil ens ændriger blive renderet når man gemmer dokumentet.
