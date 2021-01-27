@@ -1,6 +1,6 @@
 ---
 title: "Dokumentation"
-description: "En opsætningsguide til KRL software dokumentation."
+description: "En opsætningsguide til KRLs software dokumentation."
 lead: "Denne side beskriver hvordan man opsætter et miljø til at skrive ekstern dokumentation i forbindelse med udvikling af KRLs IT-services."
 date: 2021-01-18T13:47:28+01:00
 lastmod: 2021-01-18T13:47:28+01:00
