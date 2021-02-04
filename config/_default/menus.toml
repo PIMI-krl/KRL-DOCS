@@ -10,11 +10,16 @@
   url = "/docs/opsaetning/"
 
 [[docs]]
-  name = "Test"
+  name = "Komponenter"
   weight = 20
-  identifier = "test"
-  url = "/docs/test/"
+  identifier = "komponenter"
+  url = "/docs/komponenter/"
 
+[[docs]]
+  name = "Services"
+  weight = 30
+  identifier = "services"
+  url = "/docs/services"
 
 [[social]]
   name = "GitHub"
